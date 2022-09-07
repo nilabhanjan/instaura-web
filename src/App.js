@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import BelowNav from "./BelowNav";
+import Navbar from "./Navbar";
+
 
 function App() {
+  let Links =[
+    {name:"SERVICES",link:"/"},
+    {name:"BRIDAL",link:"/"},
+    {name:"GALLERY",link:"/"},
+    {name:"SHOP",link:"/"},
+    {name:"ABOUT US",link:"/"},
+    {name:"BOOK AN APPOINMENT",link:"/"},
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navbar/>
+    <BelowNav Links={Links}/>
     </div>
   );
 }
