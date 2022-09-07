@@ -7,7 +7,7 @@ export default function BelowNav({ Links }) {
 
       <div className="flex items-center justify-center">
 
-        {/* below navbar menu list     */}
+        {/* below navbar menu list */}
         <ul className="flex ">
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-l md:my-0 my-7">
