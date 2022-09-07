@@ -1,6 +1,14 @@
 import React from "react";
 
 export default function ContactThird() {
+
+  // payment logos object, unalbe to map the images
+  const payment = [
+    { name: "PAYTM", src: "../Images/paytm.png" },
+    { name: "VISA", src: "../Images/visa.png" },
+    { name: "MASTERCARD", src: "../Images/mastercard.png" },
+    { name: "COD", src: "../Images/cod.png" },
+  ];
   return (
     <div className="flex-cols-1 md:mt-5 md:flex md:justify-between p-10">
       <div className="font-bold text-xs">
@@ -37,6 +45,7 @@ export default function ContactThird() {
 
       <div className="font-bold text-xs">
         <ul>
+          {/* Connect and social logos */}
           <li className="mb-5 text-sm">Connect</li>
           <li className="flex">
             <img
@@ -56,10 +65,20 @@ export default function ContactThird() {
             />
           </li>
 
+
+          {/* payment logos */}
           <li className="mt-5 mb-5 text-sm">Payment</li>
-          <li>Payment logos here</li>
+          <li className="flex gap-2" >
+            
+             <img src={require("../Images/paytm.png")} className="h-7 w-7" alt={payment.name} />
+             <img src={require("../Images/visa.png")} className="h-7 w-7" alt={payment.name} /> 
+             <img src={require("../Images/mastercard.png")} className="h-7 w-7" alt={payment.name} /> 
+             <img src={require("../Images/cod.png")} className="h-7 w-7" alt={payment.name} /> 
+            
+          </li>
         </ul>
       </div>
+
 
       <div className="grid grid-cols-1">
         <h1 className="text-xl">Get special offers in your inbox!</h1>
@@ -80,7 +99,7 @@ export default function ContactThird() {
             <li>to receive marketing communications</li>
             <li>from instaurasalon.com and its affiliates.</li>
           </ul>
-          <button className="bg-[#FF0000] text-white rounded p-1 h-10 md:p-2 m-1 mr-4">
+          <button className="bg-[#FF0000] text-white rounded h-10 p-2 mr-8 mt-2 md:p-2 md:m-1 md:mr-4">
             Subscribe
           </button>
         </div>

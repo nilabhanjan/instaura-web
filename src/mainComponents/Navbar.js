@@ -18,10 +18,10 @@ export default function Navbar() {
     setNav(!nav);
   };
   return (
-    <div className="flex items-center justify-between first-letter:h-18 max-w-[1240] mx-auto px-8 text-white shadow-lg bg-black">
+    <div className="flex items-center justify-between h-18 max-w-[1240] mx-auto px-8 text-white shadow-lg bg-black ">
       {/* image for navbar */}
       <Link to="/">
-        <img className="logo " src={require('../src/Images/logo.png')} alt="logo " />
+        <img className="logo " src={require('../Images/logo.png')} alt="logo " />
       </Link>
 
       {/* menu for navbar */}
@@ -37,7 +37,7 @@ export default function Navbar() {
 
       {/* menu button and cross button on mobile view */}
 
-      <div onClick={handleNav} className=" flex md:hidden ">
+      <div onClick={handleNav} className=" flex md:hidden z-10 ">
         {nav ? (
           <AiOutlineClose size={20}></AiOutlineClose>
         ) : (
@@ -49,16 +49,11 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] border-r border-r-gray-900 bg-black h-full ease-in-out duration-1000 md:hidden"
-            : "fixed left-[-100%] top-0 h-full duration-1000"
-        }
-      >
-        {/* logo for mobile view */}
-        <div className="flex items-center justify-center">
-          <Link to="/">
-            <img className="logo" src={require('../src/Images/logo.png')} alt="logo" />
-          </Link>
-        </div>
+            ? "fixed right-0 top-12 w-[60%] border-r border-r-gray-900 bg-black h-full ease-in-out duration-1000 md:hidden"
+            : "fixed right-[-100%] top-12 h-full duration-1000"
+        }>
+        
+        
         {/* mobile menu list */}
         <ul className="p-3 uppercase ">
           {sections.map((link) => (

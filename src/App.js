@@ -1,5 +1,5 @@
-import BelowNav from "./BelowNav";
-import Navbar from "./Navbar";
+import BelowNav from "./mainComponents/BelowNav";
+import Navbar from "./mainComponents/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles.css";
 import Home from "./mainComponents/Home";

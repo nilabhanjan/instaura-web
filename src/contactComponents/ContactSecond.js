@@ -65,7 +65,7 @@ export default function ContactSecond() {
                   <div className="bg-black text-white p-2 w-20 text-center">
                     {data.day}
                   </div>
-                  <div className="bg-[#FF0000] p-2">{data.timing}</div>
+                  <div className="bg-[#FF0000] text-white p-2">{data.timing}</div>
                 </div>
               </li>
             ))}
@@ -74,7 +74,7 @@ export default function ContactSecond() {
         </div>
 
         {/* Another Option */}
-        
+
         {/* <div className="grid grid-cols-1 mt-10">
           <div className="bg-black text-white p-2  text-center">
             MONDAY TO SUNDAY
