@@ -15,7 +15,7 @@ export default function ContactSecond() {
       <div className="flex flex-col flex-cols-1 justify-between ">
         {/* ADDRESS div */}
         <div className="mt-5">
-          <h1 className="text-[#FF0000] font-bold text-3xl mb-2">ADDRESS</h1>
+          <h1 className="text-[#FF0000] font-bold text-xl mb-2">ADDRESS</h1>
           <ul>
             <li>1st Floor, Lakhimandir Complex</li>
             <li>Beltola Tiniali</li>
@@ -26,7 +26,7 @@ export default function ContactSecond() {
 
         {/* CALL div */}
         <div className="mt-5">
-          <h1 className="text-[#FF0000] font-bold text-3xl mb-4">CALL</h1>
+          <h1 className="text-[#FF0000] font-bold text-xl mb-4">CALL</h1>
           <p className="text-lg">060039 81831</p>
         </div>
 
@@ -36,7 +36,7 @@ export default function ContactSecond() {
             <li className="flex items-center ">
               <img
                 className="h-5 w-5 mr-3"
-                src={require("../Images/facebook.png")}
+                src="./images/facebook.png"
                 alt="fb_icon"
               />
               Facebook
@@ -44,7 +44,7 @@ export default function ContactSecond() {
             <li className="flex items-center ">
               <img
                 className="h-5 w-5 mr-3"
-                src={require("../Images/instagram.png")}
+                src="images/instagram.png"
                 alt="insta_icon"
               />
               Instagram
@@ -55,7 +55,7 @@ export default function ContactSecond() {
 
       {/* BUISNESS HOURS div */}
       <div className="mt-5">
-        <h1 className="text-[#FF0000] font-bold text-3xl">BUISNESS HOURS</h1>
+        <h1 className="text-[#FF0000] font-bold text-xl ml-1">BUISNESS HOURS</h1>
 
         <div className="grid grid-rows-1">
           <ul className="">
@@ -88,7 +88,7 @@ export default function ContactSecond() {
 
       {/* query div */}
       <div className="mt-5">
-        <h1 className="text-[#FF0000] font-bold text-3xl">SEND QUERY</h1>
+        <h1 className="text-[#FF0000] font-bold text-xl">SEND QUERY</h1>
         <div className="grid grid-cols-1">
           <input
             className="mt-2 p-3 h-10 w-72 md:w-96 rounded border border-black"

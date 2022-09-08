@@ -15,7 +15,7 @@ export default function Navbar({ sections, links }) {
       <Link to="/">
         <img
           className="logo "
-          src={require("../Images/logo.png")}
+          src="./images/logo.png"
           alt="logo "
         />
       </Link>

@@ -1,11 +1,14 @@
 import React from 'react'
-import FirstComponent from '../homeComponents/HomeFirst'
+import  HomeFirst  from '../homeComponents/HomeFirst'
+import HomeSecond from '../homeComponents/HomeSecond'
+
 
 
 export default function Home() {
   return (
     <>
-    <FirstComponent/>
+    <HomeFirst/>
+    <HomeSecond/>
     </>
   
   )
