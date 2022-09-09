@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 
 export default function BelowNav({ links }) {
@@ -11,11 +11,11 @@ export default function BelowNav({ links }) {
         {/* below navbar menu list mapped*/}
         <ul className="flex ">
           {links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-l md:my-0 my-7">
-              <Link to={link.link}
-                className="text-gray-900 hover:text-red-400 ">
+            <li key={link.name} className="md:ml-8 text-l md:my-0 my-7 text-gray-900 hover:text-red-500">
+              <NavLink to={link.link}
+                className={({ isActive }) => (isActive ? 'text-red-500' : '')}>
                 {link.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

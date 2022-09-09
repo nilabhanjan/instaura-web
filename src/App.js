@@ -6,23 +6,24 @@ import Home from "./mainComponents/Home";
 import Contact from "./mainComponents/Contact";
 import Footer from "./mainComponents/Footer";
 import Location from "./mainComponents/Location";
+import TestImage from "./mainComponents/TestImage";
 
 function App() {
   //   items object for navbar
   let sections = [
     { name: "CONTACT", link: "/contact" },
-    { name: "SIGN IN", link: "/" },
+    { name: "SIGN IN", link: "/signin" },
     { name: "OUR LOCATION", link: "/location" },
   ];
 
   // item object for below navbar
   let links = [
-    { name: "SERVICES", link: "/" },
-    { name: "BRIDAL", link: "/" },
-    { name: "GALLERY", link: "/" },
-    { name: "SHOP", link: "/" },
-    { name: "ABOUT US", link: "/" },
-    { name: "BOOK AN APPOINMENT", link: "/" },
+    { name: "SERVICES", link: "/services" },
+    { name: "BRIDAL", link: "/bridal" },
+    { name: "GALLERY", link: "/gallery" },
+    { name: "SHOP", link: "/shop" },
+    { name: "ABOUT US", link: "/aboutus" },
+    { name: "BOOK AN APPOINMENT", link: "/bookapoinment" },
   ];
   return (
     <>
@@ -39,6 +40,8 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/location" element={<Location/>} />
+          <Route path="/services" element={<TestImage/>} />
+
         </Routes>
         </main>
         

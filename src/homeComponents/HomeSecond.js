@@ -2,24 +2,24 @@ import React from "react";
 
 export default function HomeSecond() {
   const roundPics = [
-    { name: "Man", src: "./images/Round_1.png" },
-    { name: "Woman", src: "./images/Round_2.png" },
-    { name: "Spa", src: "./images/Round_3.png" },
-    { name: "Kid", src: "./images/Round_4.png" },
+    { name: "Man", src: "./images/Round_1.png", text: "gents haircut styles",discount:"20%" },
+    { name: "Woman", src: "./images/Round_2.png",text: "ladies haircut styles",discount:"30%"  },
+    { name: "Spa", src: "./images/Round_3.png",text: "spa services",discount:"25%"  },
+    { name: "Kid", src: "./images/Round_4.png",text: "kids haircut styles",discount:"30%"  },
   ];
   return (
-    <div className="mt-10">
-      <div className="grid gap-4 grid-cols-1 md:flex md:flex-cols-4 justify-center">
-        {roundPics.map(({ src, name }) => (
-          <div className="grid grid-cols-1 gap-10 m-5 items-center">
+    <div className="mt-10 grid md:flex justify-center mb-3">
+     
+        {roundPics.map(({ src, name,text,discount }) => (
+          <div className="grid grid-cols-1 justify-center gap-3">
             <img src={src} className="h-64 p-4 " alt={name} />
-            <div className="">
-              <h2 className="uppercase"> Gents Hair cut</h2>
-              <div className="bg-red-500 p-2 md-rounded w-20">gg</div>
+            <div className="text-center">
+              <h2 className="uppercase">{text}</h2>
+              <button className="p-3 bg-[#FF0000] text-white font-bold text-xl uppercase rounded w-48 mt-2 " >{discount} OFF</button>
             </div>
           </div>
         ))}
-      </div>
+      
     
     </div>
   );

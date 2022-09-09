@@ -8,6 +8,7 @@
 
 /* first home component */
 
+/* image carasoul css */
 .slider {
   position: relative;
   height: 100vh;
@@ -22,27 +23,6 @@
   border-radius: 10px;
 }
 
-.right-arrow {
-  position: absolute;
-  top: 35%;
-  right: 32px;
-  font-size: 3rem;
-  color: rgb(188, 105, 105);
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.left-arrow {
-  position: absolute;
-  top: 35%;
-  left: 32px;
-  font-size: 3rem;
-  color: rgb(188, 105, 105);
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
 
 .slide {
   opacity: 0;
@@ -51,11 +31,18 @@
 
 .slide.active {
   opacity: 1;
-  transition-duration: 2s;
+  transition-duration: 5s;
   transform: scale(1.0);
+}
+/* image carasoul css end */
+
+
+/* mobile view image */
+.mobile_img{
+  background-image: url("../public//images/banner-1 copy.jpg");
+  height: 50vh;
 }
 
 
-
-  /* contact page */
+/* contact page */
 

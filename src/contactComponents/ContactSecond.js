@@ -11,7 +11,7 @@ export default function ContactSecond() {
     { day: "SUN", timing: "10:00 AM - 08:00 PM" },
   ];
   return (
-    <div className=" flex-cols-1 md:mt-5 md:flex md:justify-between p-10 bg-gray-100 ">
+    <div className=" flex-cols-1 md:mt-5 md:flex-cols-1 md:justify-between lg:flex p-10 bg-gray-100 ">
       <div className="flex flex-col flex-cols-1 justify-between ">
         {/* ADDRESS div */}
         <div className="mt-5">
