@@ -18,7 +18,7 @@ function ImgSlider({ SliderData }) {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000);
+    }, 6000);
     return () => clearInterval(interval);
   });
 

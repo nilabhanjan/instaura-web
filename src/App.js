@@ -6,6 +6,7 @@ import Home from "./mainComponents/Home";
 import Contact from "./mainComponents/Contact";
 import Footer from "./mainComponents/Footer";
 import Location from "./mainComponents/Location";
+import BackToTop from "./Utilities/BackToTop";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <footer>
         <Footer/>
         </footer>
+        <BackToTop/>
         </div>
 
       </Router>
