@@ -55,7 +55,9 @@ export default function ContactSecond() {
 
       {/* BUISNESS HOURS div */}
       <div className="mt-5">
-        <h1 className="text-[#FF0000] font-bold text-xl ml-1">BUISNESS HOURS</h1>
+        <h1 className="text-[#FF0000] font-bold text-xl ml-1">
+          BUISNESS HOURS
+        </h1>
 
         <div className="grid grid-rows-1">
           <ul className="">
@@ -65,12 +67,13 @@ export default function ContactSecond() {
                   <div className="bg-black text-white p-2 w-20 text-center">
                     {data.day}
                   </div>
-                  <div className="bg-[#FF0000] text-white p-2">{data.timing}</div>
+                  <div className="bg-[#FF0000] text-white p-2">
+                    {data.timing}
+                  </div>
                 </div>
               </li>
             ))}
           </ul>
-
         </div>
 
         {/* Another Option */}
@@ -83,7 +86,6 @@ export default function ContactSecond() {
             10:00 AM - 8:00 PM
           </div>
         </div> */}
-
       </div>
 
       {/* query div */}
@@ -91,22 +93,22 @@ export default function ContactSecond() {
         <h1 className="text-[#FF0000] font-bold text-xl">SEND QUERY</h1>
         <div className="grid grid-cols-1">
           <input
-            className="mt-2 p-3 h-10 w-72 md:w-96 rounded border border-black"
+            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
             placeholder="Name*"
             type="string"
           ></input>
           <input
-            className="mt-2 p-3 h-10 w-72 md:w-96 rounded border border-black"
+            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
             placeholder="Email*"
             type="email"
           ></input>
           <input
-            className="mt-2 p-3 h-10 w-72 md:w-96 rounded border border-black"
+            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
             placeholder="Contact*"
             type="string"
           ></input>
           <textarea
-            className="mt-2 p-3 h-20 w-72 md:w-96 rounded border border-black"
+            className="mt-2 p-3 h-20 md:w-96 rounded border border-black"
             placeholder="Query*"
             type="string"
           ></textarea>

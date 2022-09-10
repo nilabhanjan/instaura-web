@@ -6,24 +6,19 @@
     width: 200px; 
 }
 
-/* first home component */
-
 /* image carasoul css */
+
 .slider {
-  position: relative;
+  
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image {
-  
-  height: auto;
-  border-radius: 10px;
-}
 
 
+/* slide and transitions */
 .slide {
   opacity: 0;
   transition-duration: 1s ease;
@@ -34,15 +29,26 @@
   transition-duration: 5s;
   transform: scale(1.0);
 }
+
+
+/* dots of image carasoul */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 3px solid #171616;
+  margin: 0 5px;
+  background: #f1f1f1;
+}
+.dot.active {
+  background: rgb(255, 0, 0);
+}
 /* image carasoul css end */
 
 
-/* mobile view image */
-.mobile_img{
-  background-image: url("../public//images/banner-1 copy.jpg");
-  height: 50vh;
-}
 
 
-/* contact page */
+
+
+
 

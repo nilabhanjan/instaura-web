@@ -6,7 +6,7 @@ import Home from "./mainComponents/Home";
 import Contact from "./mainComponents/Contact";
 import Footer from "./mainComponents/Footer";
 import Location from "./mainComponents/Location";
-import TestImage from "./mainComponents/TestImage";
+
 
 function App() {
   //   items object for navbar
@@ -40,7 +40,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/location" element={<Location/>} />
-          <Route path="/services" element={<TestImage/>} />
+          
 
         </Routes>
         </main>
