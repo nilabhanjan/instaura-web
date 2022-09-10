@@ -51,7 +51,7 @@ export default function Navbar({ sections, links }) {
         }
       >
         {/*1st nav bar  mobile menu list mapped */}
-        <ul className="p-3 uppercase ">
+        <ul className="text-xs p-3 uppercase ">
           {sections.map((link) => (
             <li key={link.name} className="p-4 border-b border-red-500">
               <Link to={link.link} className="text-white-900 ">
