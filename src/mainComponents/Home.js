@@ -5,7 +5,7 @@ import HomeBrands from '../homeComponents/HomeBrands';
 import HomeSecond from '../homeComponents/HomeSecond';
 import { SliderData,pics,brands, brands2, SliderData2 } from '../homeComponents/ImagesData';
 
-import ImgSlider from '../homeComponents/ImgSlider';
+import ImgSlider from '../Utilities/ImgSlider';
 
 
 

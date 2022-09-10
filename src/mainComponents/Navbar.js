@@ -46,8 +46,8 @@ export default function Navbar({ sections, links }) {
       <div
         className={
           nav
-            ? "fixed right-0 top-12 w-[60%] border-r border-r-gray-900 bg-black h-full ease-in-out duration-1000 md:hidden"
-            : "fixed right-[-100%] top-12 h-full duration-1000"
+            ? "absolute right-0 top-12 w-[60%] border-r border-r-gray-900 bg-black h-auto ease-in-out duration-1000 md:hidden"
+            : "fixed right-[-100%] top-12 h-full "
         }
       >
         {/*1st nav bar  mobile menu list mapped */}

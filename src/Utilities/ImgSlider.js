@@ -64,7 +64,7 @@ function ImgSlider({ SliderData }) {
           );
         })}
       </div>
-      <div className="hidden mt-1 md:flex place-content-center  ">
+      <div className="hidden mt-2 md:flex place-content-center  ">
         {Array.from({ length: length - 1 }).map((item, index) => (
           <div
             key={index}

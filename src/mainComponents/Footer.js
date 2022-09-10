@@ -25,6 +25,7 @@ export default function Footer() {
           <ul>
             <li className=" text-sm mt-5 md:mt-0 mb-5"> Popular Services</li>
             <li>Hair Cut</li>
+            <li>Hair Colour</li>
             <li>Hair Treatment</li>
             <li>Skin Care</li>
             <li>Skin Treatment</li>
@@ -36,12 +37,12 @@ export default function Footer() {
         <div className="font-bold text-xs">
           <ul>
             <li className="mb-5 mt-5 md:mt-0 text-sm">Corporate</li>
-            <li>Hair Cut</li>
             <li>About Us</li>
             <li>Contact Us</li>
             <li>Customer Service</li>
             <li>Blog</li>
-            <li>Terms & conditions</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
 
@@ -108,7 +109,7 @@ export default function Footer() {
               <li>from instaurasalon.com and its affiliates.</li>
             </ul>
 
-            <button className="bg-[#FF0000] text-white ml-5 rounded h-10 p-2  mt-2 ">
+            <button className="bg-[#FF0000] text-white  ml-1 md:ml-5 rounded h-10 p-2  mt-2 ">
               Subscribe
             </button>
           </div>

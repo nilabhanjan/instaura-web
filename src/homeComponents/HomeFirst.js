@@ -1,5 +1,5 @@
 import React from "react";
-import ImgSlider from "./ImgSlider";
+import ImgSlider from "../Utilities/ImgSlider";
 
 function HomeFirst({ SliderData }) {
   return (
