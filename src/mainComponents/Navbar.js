@@ -5,15 +5,22 @@ import { NavLink, Link } from "react-router-dom";
 export default function Navbar({ sections, links }) {
   const [nav, setNav] = useState(false);
 
+
   //   for closing and opening of slide menu on mobile
   const handleNav = () => {
     setNav(!nav);
   };
+
+
+
   return (
     <div className="flex items-center justify-between h-18 max-w-[1240] mx-auto px-8 text-white shadow-lg bg-black ">
       {/* image for navbar */}
       <Link to="/">
-        <img className="logo" 
+      
+        <img
+        onClick={() => {nav && handleNav() }}
+        className="logo" 
         src="./images/logo.png" 
         alt="logo " />
       </Link>
@@ -53,7 +60,7 @@ export default function Navbar({ sections, links }) {
         {/*1st nav bar  mobile menu list mapped */}
         <ul className="text-xs p-3 uppercase ">
           {sections.map((link) => (
-            <li key={link.name} className="p-4 border-b border-red-500">
+            <li onClick={handleNav} key={link.name} className="p-4 border-b border-red-500">
               <Link to={link.link} className="text-white-900 ">
                 {link.name}
               </Link>
@@ -63,7 +70,7 @@ export default function Navbar({ sections, links }) {
           {/*2nd nav bar  mobile menu list mapped */}
 
           {links.map((link) => (
-            <li key={link.name} className="p-4 border-b border-red-500  ">
+            <li onClick={handleNav} key={link.name} className="p-4 border-b border-red-500  ">
               <Link to={link.link} className="text-white-900 ">
                 {link.name}
               </Link>
