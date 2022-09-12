@@ -1,6 +1,12 @@
 import React from "react";
+import Query from "./Query";
+
+
 
 export default function ContactSecond() {
+  
+  
+  // timing array
   let openDays = [
     { day: "MON", timing: "10:00 AM - 08:00 PM" },
     { day: "TUE", timing: "10:00 AM - 08:00 PM" },
@@ -10,6 +16,7 @@ export default function ContactSecond() {
     { day: "SAT", timing: "10:00 AM - 08:00 PM" },
     { day: "SUN", timing: "10:00 AM - 08:00 PM" },
   ];
+
   return (
     <div className=" flex-cols-1 md:mt-5 md:flex-cols-1 md:justify-between lg:flex p-10 bg-gray-100 ">
       <div className="flex flex-col flex-cols-1 justify-between ">
@@ -90,32 +97,7 @@ export default function ContactSecond() {
 
       {/* query div */}
       <div className="mt-5">
-        <h1 className="text-[#FF0000] font-bold text-xl">SEND QUERY</h1>
-        <div className="grid grid-cols-1">
-          <input
-            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
-            placeholder="Name*"
-            type="string"
-          ></input>
-          <input
-            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
-            placeholder="Email*"
-            type="email"
-          ></input>
-          <input
-            className="mt-2 p-3 h-10 md:w-96 rounded border border-black"
-            placeholder="Contact*"
-            type="string"
-          ></input>
-          <textarea
-            className="mt-2 p-3 h-20 md:w-96 rounded border border-black"
-            placeholder="Query*"
-            type="string"
-          ></textarea>
-        </div>
-        <button className="bg-[#FF0000] text-white py-3 px-3 mt-6 rounded">
-          Submit
-        </button>
+      <Query/>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
-import BelowNav from "./mainComponents/BelowNav";
-import Navbar from "./mainComponents/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles.css";
+import BelowNav from "./mainComponents/BelowNav";
+import Navbar from "./mainComponents/Navbar";
 import Home from "./mainComponents/Home";
 import Contact from "./mainComponents/Contact";
 import Footer from "./mainComponents/Footer";
@@ -42,7 +42,6 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/location" element={<Location/>} />
           
-
         </Routes>
         </main>
         

@@ -11,8 +11,6 @@ export default function Navbar({ sections, links }) {
     setNav(!nav);
   };
 
-
-
   return (
     <div className="flex items-center justify-between h-18 max-w-[1240] mx-auto px-8 text-white shadow-lg bg-black ">
       {/* image for navbar */}
@@ -39,7 +37,7 @@ export default function Navbar({ sections, links }) {
         ))}
       </ul>
 
-      {/* menu button and cross button on mobile view */}
+      {/* burger button and cross button on mobile view */}
 
       <div onClick={handleNav} className=" flex md:hidden z-10 ">
         {nav ? (
